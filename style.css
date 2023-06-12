@@ -1,6 +1,12 @@
 :root {
-  --primary: #c29d6a;
-  --bg: #010101;
+  /* --primary: #c29d6a; */
+  --primary: #1d267d;
+  --hover: #8696fe;
+  --bg: #1d267d;
+  --span: #05bfdb;
+  --about: #088395;
+  --font-weight-header: 500;
+  --font-weight-content: 300;
 }
 
 * {
@@ -17,7 +23,7 @@ html {
 }
 
 body {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Poppins", sans-serif;
   background-color: var(--bg);
   color: white;
 }
@@ -29,7 +35,8 @@ body {
   justify-content: space-between;
   align-items: center;
   padding: 1.4rem 7%;
-  background-color: rgba(1, 1, 1, 0.8);
+  /* background-color: rgba(1, 1, 1, 0.8); */
+  background-color: #0c134f;
   position: fixed;
   top: 0;
   left: 0;
@@ -52,11 +59,14 @@ body {
   display: inline-block;
   font-size: 1.4rem;
   margin: 0 1rem;
+  transition: 0.3s;
 }
 
 .navbar .navbar-nav a:hover {
-  color: var(--primary);
+  color: var(--hover);
 }
+
+/* Content */
 
 .hero {
   min-height: 100vh;
@@ -72,29 +82,35 @@ body {
 
 .hero .content h1 {
   font-size: 2.5em;
+  font-weight: var(--font-weight-header);
   color: white;
   text-shadow: 1px 1px 3px rgba(1, 1, 3, 0.5);
   line-height: 1.2;
 }
 
 .content h1 span {
-  color: var(--bg);
+  color: var(--span);
 }
 
 .hero .content p {
   font-size: 1.6rem;
   margin-top: 1rem;
+  font-weight: var(--font-weight-content);
   line-height: 1.4;
-  font-weight: 100;
   text-shadow: 1px 1px 3px rgba(1, 1, 3, 0.5);
 }
 
+/* About */
+
 .about {
   padding: 8rem 7% 1.4rem;
+  background-color: var(--about);
 }
 
-.about h2 {
+.about h2,
+.project h2 {
   text-align: center;
+  font-weight: var(--font-weight-header);
   font-size: 2.6rem;
   margin-bottom: 3rem;
 }
@@ -117,12 +133,45 @@ body {
 }
 
 .about .row .content h3 {
+  font-weight: 400;
   font-size: 1.8rem;
   margin-bottom: 1rem;
 }
 
 .about .row .content p {
+  font-weight: var(--font-weight-content);
   margin-bottom: 0.8rem;
   font-size: 1.3rem;
   line-height: 1.6;
+}
+
+/* Project */
+.project {
+  padding: 8rem 7% 1.4rem;
+}
+.project h2 {
+  text-align: center;
+}
+
+.project .row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 5rem;
+  justify-content: center;
+}
+
+.project-card {
+  text-align: center;
+  padding-bottom: 4rem;
+}
+
+.project-card .project-img {
+  margin: 6rem;
+  border-radius: 5px;
+  width: 100px;
+}
+
+.project-desc {
+  margin: 1rem auto 0.5rem;
+  font-weight: var(--font-weight-content);
 }
