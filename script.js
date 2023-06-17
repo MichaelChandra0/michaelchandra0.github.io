@@ -5,6 +5,7 @@ document.querySelector("#hamburger-menu").onclick = () => {
 };
 
 const hm = document.querySelector("#hamburger-menu");
+// const link = document.querySelector(".navbar-nav a");
 
 document.addEventListener("click", function (e) {
   if (!hm.contains(e.target) && !navbarNav.contains(e.target)) {

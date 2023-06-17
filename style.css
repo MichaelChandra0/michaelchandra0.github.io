@@ -52,13 +52,15 @@ body {
   right: 0;
   z-index: 9999;
   background-image: linear-gradient(#e4a5ff, #cbbdff);
+  border-bottom: 1px solid #b4a0ff;
   /* border-bottom: 0.1rem solid #ab94fd72; */
-  opacity: 90%;
+  /* opacity: 90%; */
+  /* border-bottom: 1px solid #b4a0ff; */
 }
 
 .navbar .logo img {
   /* color: white; */
-  width: 5rem;
+  width: 3rem;
   border-radius: 50%;
 }
 
@@ -218,8 +220,8 @@ body {
 }
 
 .project-card .project-img {
-  margin: 6rem;
-  border-radius: 5px;
+  margin: 4rem;
+  border-radius: 50%;
   width: 100px;
 }
 
@@ -255,6 +257,7 @@ body {
 }
 
 .card img {
+  /* height: 25rem; */
   border-radius: 50%;
   width: 20rem;
 }
@@ -378,6 +381,7 @@ footer .fa-brands {
     transition: 0.3s;
     /* opacity: 100%; */
     border-top: 1px solid #b4a0ff;
+    /* display: inline-block; */
   }
 
   .navbar .navbar-nav.active {
